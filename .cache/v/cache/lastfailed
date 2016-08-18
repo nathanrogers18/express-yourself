@@ -1,1 +1,3 @@
-{}
+{
+  "test_validator.py::test_date": true
+}

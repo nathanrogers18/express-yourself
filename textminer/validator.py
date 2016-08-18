@@ -38,12 +38,14 @@ def zipcode(text):
 
 
 def date(text):
-    return re.match(r"^\d{1,4}[/-]\d{1,4}[/-]\d{1,4}$", text)
-
+    print(re.match(r"^\d{1,4}[/-]\d{1,4}[/-]\d{1,4}$", text))
+    #     return True
+    # else:
+    return re.match(r"^((Jan|Feb)[a-z]*[\s\.]*\d{1,2}[,\s]*\d{4})|(\d{4}\s((Jan|Feb)[a-z]*)\s\d{1,2})$", text)
 
 # ADVANCED
 def advanced_date(text):
-    pass
+    return re.match(r"^((Jan|Feb)[a-z]*[\s\.]*\d{1,2}[,\s]*\d{4})|(\d{4}\s((Jan|Feb)[a-z]*)\s\d{1,2})$", text)
 
 
 def email(text):

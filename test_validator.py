@@ -125,7 +125,7 @@ def test_zip():
     assert not v.zipcode("8029-3924")
 
 
-@xfail
+
 def test_date():
     assert v.date("9/4/1976")
     assert v.date("1976-09-04")
@@ -138,7 +138,6 @@ def test_date():
 ## ADVANCED MODE BEGINS
 
 
-@xfail
 def test_advanced_date():
     assert v.date("2014 Jan 01")
     assert v.date("2014 January 01")
